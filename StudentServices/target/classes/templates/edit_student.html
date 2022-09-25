@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Student service</title>
+<link rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+	integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+	crossorigin="anonymous">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div
+				class="col-lg-6 col-md-6 col-sm-6 container justify-content-center card">
+				<h1 class="text-center">Update new Student</h1>
+				<div class="card-body">
+				
+					<form th:action="@{/students/{id} (id=${student.id})}" th:object="${student}" method="POST">
+						<div class="form-group">
+							<label>Student Name</label> <input type="text" name="name"
+								th:field="*{name}" placeholder="Enter name" class="form-control" />
+						</div>
+
+						<div class="form-group">
+							<label>Student Email</label> <input type="text" name="email"
+								th:field="*{email}" placeholder="Enter email"
+								class="form-control" />
+						</div>
+
+						<div class="form-group">
+							<label>Student Name</label> <input type="text" name="address"
+								th:field="*{address}" placeholder="Enter address"
+								class="form-control" />
+						</div>
+						<div class="box-footer">
+					     <button type="submit" class ="btn btn-primary">Submit</button>
+					</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
