@@ -1,0 +1,6 @@
+com\spring\demoproductservice\controller\ProductController.class
+com\spring\demoproductservice\DemoProductServiceApplication.class
+com\spring\demoproductservice\service\ProductService.class
+com\spring\demoproductservice\model\Product.class
+com\spring\demoproductservice\repository\ProductRepository.class
+com\spring\demoproductservice\model\Product$ProductBuilder.class
